@@ -1,0 +1,24 @@
+@model IEnumerable<EmployeeManagement.Models.Manager>
+
+<h2>Managers List</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Number of Teams</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var manager in Model)
+        {
+            <tr>
+                <td>@manager.Id</td>
+                <td>@manager.Name</td>
+                <td>@manager.Position</td>
+                <td>@manager.NumberOfTeams</td>
+            </tr>
+        }
+    </tbody>
+</table>

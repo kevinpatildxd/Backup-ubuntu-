@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+@* Index.cshtml *@
+<h1>Index Page</h1>
+<p>Welcome to the Cookie and Session demo!</p>
+<a href="/Home/About">Go to About Page</a>
+<br />
+<a href="/Home/QueryStringDemo?name=JohnDoe">Pass Query String</a>
+<br />
+<form method="post" action="/Home/HiddenFieldDemo">
+    <input type="hidden" name="hiddenFieldValue" value="HiddenValue" />
+    <button type="submit">Submit Hidden Field</button>
+</form>
